@@ -10,6 +10,10 @@
   --nav_social_backgroung: #1386d3;
 }
 
+a {
+  color: var(--nav_primary_text);
+}
+
 .container {
   width: 100vw;
   height: 20vh;
@@ -42,34 +46,59 @@
       .social {
         display: flex;
         gap: 1rem;
+        color: var(--nav_primary_background);
 
         .social_icon {
           cursor: pointer;
-          background-color: var(--nav_social_backgroung);
           padding: 0.5rem 0.7rem;
+          background-color: var(--nav_primary_text);
           border-radius: 50%;
           font-size: 0.8rem;
+
+          &:first-child {
+            background-color: var(--nav_social_backgroung);
+            color: var(--nav_primary_text);
+          }
         }
       }
       .contect_info {
         display: flex;
         gap: 1rem;
+
+        .contect {
+          display: flex;
+          gap: 0.5rem;
+
+          i {
+            color: var(--nav_social_backgroung);
+          }
+        }
       }
     }
 
     .navbar {
       display: flex;
-      padding-top: 1rem;
       gap: 2rem;
+      padding-top: 0.5rem;
+      align-items: center;
 
       ul {
         display: flex;
+        padding-top: 0.8rem;
         gap: 2rem;
         list-style: none;
 
         li {
+          font-size: 15px;
           cursor: pointer;
         }
+      }
+
+      button {
+        padding: 0.5rem 3rem;
+        border-radius: 500px;
+        background-color: var(--nav_social_backgroung);
+        color: var(--nav_primary_text);
       }
     }
   }

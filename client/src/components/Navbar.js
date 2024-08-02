@@ -21,11 +21,11 @@ const Navbar = () => {
             <i className="fa-brands fa-linkedin-in social_icon"></i>
           </div>
           <div className="contect_info">
-            <div className="phone">
-              <i className="fa-solid fa-phone"></i>
+            <div className="contect phone">
+              <i class="fa-solid fa-phone-flip"></i>
               <span>+91 86 86 86 2475</span>
             </div>
-            <div className="email">
+            <div className="contect email">
               <i className="fa-solid fa-envelope"></i>
               <span>info@awcindia.com</span>
             </div>
@@ -33,15 +33,33 @@ const Navbar = () => {
         </div>
         <div className="navbar">
           <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>PRODUCTS</li>
-            <li>GALLARY</li>
-            <li>CAREER</li>
-            <li>BLOG</li>
-            <li>TESTIMONIAL</li>
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#">ABOUT</a>
+            </li>
+            <li>
+              <a href="#">PRODUCTS</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#">GALLARY</a>
+            </li>
+            <li>
+              <a href="#">CAREER</a>
+            </li>
+            <li>
+              <a href="#">BLOG</a>
+            </li>
+            <li>
+              <a href="#">TESTIMONIAL</a>
+            </li>
           </ul>
-          <button>COTACT</button>
+          <button>
+            <a href="#">CONTACT</a>
+          </button>
         </div>
       </div>
     </div>
