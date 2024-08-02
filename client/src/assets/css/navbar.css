@@ -50,13 +50,15 @@ a {
 
         .social_icon {
           cursor: pointer;
-          padding: 0.5rem 0.7rem;
           background-color: var(--nav_primary_text);
           border-radius: 50%;
           font-size: 0.8rem;
+          padding: 0.5rem 0.6rem;
+          color: var(--nav_primary_background);
 
           &:first-child {
             background-color: var(--nav_social_backgroung);
+            padding: 0.5rem 0.7rem;
             color: var(--nav_primary_text);
           }
         }
@@ -79,8 +81,8 @@ a {
     .navbar {
       display: flex;
       gap: 2rem;
-      padding-top: 0.5rem;
-      align-items: center;
+      padding-top: 0.8rem;
+      justify-content: space-around;
 
       ul {
         display: flex;
@@ -89,7 +91,8 @@ a {
         list-style: none;
 
         li {
-          font-size: 15px;
+          font-size: 13px;
+          font-weight: bold;
           cursor: pointer;
         }
       }
