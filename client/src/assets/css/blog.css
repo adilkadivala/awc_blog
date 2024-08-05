@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_text: #1386d3;
+  --secondry_text: #000;
+  --background_color: #8a85852f;
+}
+
+a {
+  color: var(--nav_primary_text);
+}
+
+.blog_container {
+  padding: 4rem 10rem;
+  display: flex;
+  flex-direction: column;
+
+  .about_page {
+    width: 15rem;
+    letter-spacing: 0.1rem;
+
+    &::after {
+      content: "";
+      display: block;
+      margin: 15px 0 0;
+      width: 4rem;
+      height: 2px;
+      background-color: var(--primary_text);
+    }
+  }
+
+  h1 {
+    padding: 5rem 0 2rem;
+    color: var(--primary_text);
+    font-weight: 5rem;
+  }
+  .description {
+    font-size: 1rem;
+    width: 70vw;
+    text-wrap: wrap;
+  }
+
+  /* cards */
+  .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 1rem;
+    margin: 2rem 0;
+    row-gap: 1rem;
+
+    .cards {
+      width: 23vw;
+      height: 60vh;
+      background-color: var(--background_color);
+      overflow: hidden;
+      border-radius: 0.4rem;
+
+      img {
+        object-fit: cover;
+      }
+
+      .card_des {
+        padding: 0 0.5rem;
+
+        .time_stamp {
+          display: flex;
+          gap: 1rem;
+          padding: 1rem 0;
+        }
+        .content {
+          h4 {
+            padding: 0.9rem 0;
+            color: var(--primary_text);
+          }
+        }
+      }
+    }
+  }
+}
