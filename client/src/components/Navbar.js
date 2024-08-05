@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -22,7 +23,7 @@ const Navbar = () => {
           </div>
           <div className="contect_info">
             <div className="contect phone">
-              <i class="fa-solid fa-phone-flip"></i>
+              <i className="fa-solid fa-phone-flip"></i>
               <span>+91 86 86 86 2475</span>
             </div>
             <div className="contect email">
@@ -34,31 +35,29 @@ const Navbar = () => {
         <div className="navbar">
           <ul>
             <li>
-              <a href="#">HOME</a>
+              <Link to="">HOME</Link>
             </li>
             <li>
-              {" "}
-              <a href="#">ABOUT</a>
+              <Link to="">ABOUT</Link>
             </li>
             <li>
-              <a href="#">PRODUCTS</a>
+              <Link to="">PRODUCTS</Link>
             </li>
             <li>
-              {" "}
-              <a href="#">GALLARY</a>
+              <Link to="">GALLARY</Link>
             </li>
             <li>
-              <a href="#">CAREER</a>
+              <Link to="">CAREER</Link>
             </li>
             <li>
-              <a href="#">BLOG</a>
+              <Link to="">BLOG</Link>
             </li>
             <li>
-              <a href="#">TESTIMONIAL</a>
+              <Link to="">TESTIMONIAL</Link>
             </li>
           </ul>
           <button>
-            <a href="#">CONTACT</a>
+            <Link to="">CONTACT</Link>
           </button>
         </div>
       </div>
