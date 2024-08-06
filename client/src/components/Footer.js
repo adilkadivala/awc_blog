@@ -37,18 +37,18 @@ const Footer = () => {
         </div>
         <div className="products">
           <p className="title">Our Products</p>
-          <label className="title">Roof Waterproofing</label>
+          <label className="title list">Roof Waterproofing</label>
           <ul>
             <li>AWC-ROOF 540</li>
             <li>AWC-ROOF 300</li>
             <li>AWC-ROOF 250</li>
           </ul>
-          <label className="title">Wall Section</label>
+          <label className="title list">Wall Section</label>
           <ul>
             <li>AWC-WALL MATE</li>
             <li>AWC-ELASTIC</li>
           </ul>
-          <label className="title">Exclusive Products</label>
+          <label className="title list">Exclusive Products</label>
           <ul>
             <li>AWC-TUFF COAT</li>
             <li>AWC-CLEAR COAT</li>
@@ -58,8 +58,8 @@ const Footer = () => {
         <div className="contect">
           <p className="title">Contact Us</p>
 
-          <div className="add_1">
-            <p>AWC Lean Manufacturing Unit</p>
+          <div className="add">
+            <p className="title list">AWC Lean Manufacturing Unit</p>
             <p>
               Survey/Plot No. 662 Village: Tembhi Taluka:- Umbergaon,Dist
               -Valsad,Umargam, Gujarat 396150
@@ -70,8 +70,8 @@ const Footer = () => {
               <span>E-mail:</span>factory@awcindia.in
             </p>
           </div>
-          <div className="add_2">
-            <p>Head Office</p>
+          <div className="add">
+            <p className="title list">Head Office</p>
             <p>
               A- 10/11, 4th Floor, Yojana CHS. Ltd, S.V Road, Malad (W), Mumbai-
               400 064.
@@ -84,6 +84,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="footer">
+        <p>Copyright © 2023 AWC. All Rights Reserved.</p>
       </div>
     </>
   );

@@ -126,3 +126,23 @@ a {
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .blog_container {
+    padding: 4rem 5rem;
+
+    .card_container {
+      .cards {
+        width: 27vw;
+        height: 70vh;
+      }
+    }
+  }
+  .CTO {
+    div {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

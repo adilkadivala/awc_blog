@@ -18,6 +18,10 @@
   .title {
     font-size: 1.2rem;
     font-weight: 600;
+
+    &.list {
+      font-size: 0.8rem;
+    }
   }
 
   .about_company {
@@ -46,6 +50,12 @@
           background-color: var(--nav_social_backgroung);
           padding: 0.8rem 0.9rem;
           color: var(--nav_primary_text);
+        }
+
+        &:hover {
+          color: var(--nav_primary_text);
+          background-color: var(--nav_social_backgroung);
+          transition: all 1s;
         }
       }
     }
@@ -78,5 +88,26 @@
   }
   .contect {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    .add {
+      P {
+        &:first-child {
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  border-top: 1px solid var(--background_primary);
+  background-color: var(--background_primary);
+  padding: 1rem 0;
+  p {
+    text-align: center;
+    color: var(--secondry_text);
   }
 }

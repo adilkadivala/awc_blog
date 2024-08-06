@@ -62,6 +62,12 @@ a {
             padding: 0.5rem 0.7rem;
             color: var(--nav_primary_text);
           }
+
+          &:hover {
+            color: var(--nav_primary_text);
+            background-color: var(--nav_social_backgroung);
+            transition: all 1s;
+          }
         }
       }
       .contect_info {
