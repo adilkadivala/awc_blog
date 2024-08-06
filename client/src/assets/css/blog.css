@@ -7,6 +7,7 @@
 :root {
   --primary_text: #1386d3;
   --secondry_text: #000;
+  --background_text: #fff;
   --background_color: #8a85852f;
 }
 
@@ -77,6 +78,49 @@ a {
             padding: 0.9rem 0;
             color: var(--primary_text);
           }
+        }
+      }
+    }
+  }
+}
+.CTO {
+  background-color: var(--secondry_text);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: var(--background_text);
+
+  div {
+    width: 60vw;
+    text-align: center;
+
+    p {
+      font-size: 2rem;
+    }
+    .btn_group {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1rem;
+
+      button {
+        padding: 0.7rem 1.7rem;
+        border-radius: 3rem;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 700;
+        background-color: transparent;
+        border: 1px solid var(--primary_text);
+        color: var(--primary_text);
+
+        &:first-child {
+          background-color: var(--primary_text);
+          color: var(--background_text);
         }
       }
     }
