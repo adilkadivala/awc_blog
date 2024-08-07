@@ -1,11 +1,11 @@
-import Index from "./pages/Index";
 import { BrowserRouter } from "react-router-dom";
+import Pathes from "./routes/Pathes";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Index />
+        <Pathes />
       </BrowserRouter>
     </>
   );
