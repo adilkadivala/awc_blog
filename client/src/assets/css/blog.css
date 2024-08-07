@@ -17,6 +17,7 @@ a {
 
 .blog_container {
   padding: 4rem 10rem;
+  background-color: var(--background_text);
   display: flex;
   flex-direction: column;
 
