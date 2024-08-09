@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/main.css";
 import Navbar from "../../components/dashboard/Navbar";
 import Sidebar from "../../components/dashboard/Sidebar";
+import "@toast-ui/editor/dist/toastui-editor.css";
+import { Editor } from "@toast-ui/react-editor";
 import { Link } from "react-router-dom";
 
 const Main = () => {
@@ -173,26 +175,13 @@ const Main = () => {
                 <i className="bx bx-filter"></i>
               </div>
               <ul className="todo-list">
-                <li className="completed">
-                  <p>Todo List</p>
-                  <i className="bx bx-dots-vertical-rounded"></i>
-                </li>
-                <li className="completed">
-                  <p>Todo List</p>
-                  <i className="bx bx-dots-vertical-rounded"></i>
-                </li>
-                <li className="not-completed">
-                  <p>Todo List</p>
-                  <i className="bx bx-dots-vertical-rounded"></i>
-                </li>
-                <li className="completed">
-                  <p>Todo List</p>
-                  <i className="bx bx-dots-vertical-rounded"></i>
-                </li>
-                <li className="not-completed">
-                  <p>Todo List</p>
-                  <i className="bx bx-dots-vertical-rounded"></i>
-                </li>
+                <Editor
+                  initialValue="hello react editor world!"
+                  previewStyle="vertical"
+                  height="600px"
+                  initialEditType="markdown"
+                  useCommandShortcut={true}
+                />
               </ul>
             </div>
           </div>
